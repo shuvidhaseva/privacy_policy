@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Rozkhata App</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #202124;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .last-updated {
+            font-size: 0.9em;
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dadce0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #5f6368;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy - Rozkhata</h1>
+    <div class="last-updated">Last Updated: <span id="date"></span></div>
+
+    <p>Humari <strong>Rozkhata</strong> app par aapka swagat hai. Aapka privacy aur data ki suraksha humare liye bohot mahatvapurna hai. Yeh Privacy Policy batati hai ki jab aap Rozkhata app ka istemal karte hain, toh hum aapke data ko kaise collect, use, aur protect karte hain.</p>
+
+    <div class="section-title">1. Data Collection (Aapka Data)</div>
+    <p>Rozkhata app mukhya roop se aapke daily transactions, khata records, aur hisab-kitab ko manage karne ke liye banayi gayi hai.</p>
+    <ul>
+        <li><strong>Local Storage:</strong> Aapka sara hisab-kitab data (Jaise customer name, transaction amount, dates) aapke device ke local storage mein save hota hai.</li>
+        <li><strong>Personal Information:</strong> Hum aapka koi bhi sensitive personal data (Jaise bank account passwords, UPI PINs) collect nahi karte.</li>
+    </ul>
+
+    <div class="section-title">2. Data Storage and Security</div>
+    <ul>
+        <li>Aapka transaction data aapke phone/device par hi rehta hai jab tak aap ise backup na karein.</li>
+        <li>Hum aapke khate ke data ko kisi teesre (third-party) server par bina aapki anumati ke sell ya share nahi karte.</li>
+    </ul>
+
+    <div class="section-title">3. App Permissions</div>
+    <p>App ki behtar service ke liye hum aap se kuch basic permissions maang sakte hain:</p>
+    <ul>
+        <li><strong>Storage Permission:</strong> Transaction reports (PDF/Excel) ya backup file save karne ke liye.</li>
+        <li><strong>Contacts Permission (Optional):</strong> Khata mein naye customer ka naam aur number aasani se add karne ke liye.</li>
+    </ul>
+
+    <div class="section-title">4. Third-Party Services</div>
+    <p>App mein crash reporting ya analytics ke liye hum standard third-party tools (Jaise Google Firebase ya Google Analytics) ka use kar sakte hain, taaki hum app performance ko behtar bana sakein. Ye tools non-personal device information collect karte hain.</p>
+
+    <div class="section-title">5. Changes to This Policy</div>
+    <p>Hum samay-samay par apni Privacy Policy ko update kar sakte hain. Kisi bhi badlav ki jankari aapko is page par update karke di jayegi.</p>
+
+    <div class="section-title">6. Contact Us</div>
+    <p>Agar aapko Rozkhata app ki privacy policy se judi koi shikayat ya sawal hai, toh aap humse sampark kar sakte hain:</p>
+    <ul>
+        <li><strong>Email:</strong> shuvidhaseva1@gmail.com</li>
+    </ul>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Rozkhata App. All Rights Reserved.</p>
+    </div>
+</div>
+
+<script>
+    // Automatically set the current date and year
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    
+    document.getElementById('date').innerText = currentDate.toLocaleDateString('en-US', options);
+    document.getElementById('year').innerText = currentDate.getFullYear();
+</script>
+
+</body>
+</html>
